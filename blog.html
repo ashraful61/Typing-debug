@@ -69,7 +69,8 @@
 
       <section class="mb-5">
         <h2>How event loop works in JavaScript ?</h2>
-        <p>Non-blocking
+        <p>
+            <b>Non-blocking</b> <br/>
             There is no one definition of blocking; it just simply means things that are running slowly on the thread. So non-blocking means things that aren’t slow on the thread.
             
             But wait, did I say JavaScript runs on a single thread? And I also said it non-blocking, which means task run quickly on the call stack? But how??? How about when we run timers? Loops?
@@ -80,8 +81,9 @@
             Concurrency means that the code is being executed concurrently by more than one thread.
             
             Okay, things are getting really weird now, how can JavaScript be single-threaded and be concurrent at the same time? i.e., executing its code with more than one thread?
-            
-            Asynchronous
+        </p>
+        <p>      
+           <b>Asynchronous</b> <br/>
             Asynchronous programming means that the code runs in an event loop. When there is a blocking operation, the event is started. The blocking code keeps running without blocking the main execution thread. When the blocking code finishes running, it queue’s the result of the blocking operations and pushes them back to the stack.
             
             But JavaScript has a single thread? What then executes this blocking code while letting other codes in the thread get executed?
