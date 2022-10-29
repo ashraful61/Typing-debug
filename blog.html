@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript QA Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container pt-3">
+      <section class="mb-5">
+        <h2>What's different on Local Storage &Session Storage ?</h2>
+
+        <h4>Local Storage</h4>
+        <p>
+          It is a web storage method that helps us store data on the client’s
+          computer in the form of key/value pairs in a web browser. The data is
+          stored in local storage for a lifetime unless the user manually
+          deletes it from the browser. It does not expire even when the user
+          closes the window or tab. Instead, the data remains in the browser
+          until and unless the browser's memory is cleared. It's data in the
+          browser can only be accessed via JavaScript and HTML5. However, the
+          user also could clear the browser data/cache to erase all local
+          storage data. It has four methods that we can use to set, retrieve,
+          remove and clear.
+        </p>
+
+        <h4>Session Storage</h4>
+        <p>
+          It is very similar to the local storage. Still, the main difference
+          lies in the lifespan as it persists in the browser until its current
+          tab is on. Once you close the tab or terminate it, the data on session
+          storage also gets lost. We can also set and retrieve its data using
+          setItem() and getItem() methods, respectively, similar to the local
+          storage methods. For example: sessionStorage.setItem(key, value);
+          sessioinStorage.getItem(key);
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2>
+          Differences Between Local Scope and Global Scope Variable In
+          JavaScript
+        </h2>
+        <h4>Global Scope</h4>
+        <p>
+          Global scope contains all of the things defined outside of all code
+          blocks. A code block simply consists of grouped statements inside
+          curly braces ({ }). if statement, loops, function are examples of
+          structure that create a code block. A global variable has global
+          scope. A global variable is accessible from anywhere in the code..
+        </p>
+        <h4>
+            Local Scope
+        </h4>
+        <p>Local scope contains things defined inside code blocks. A local variable has local scope. A local variable is only accessible where it’s declared.</p>
+      </section>
+      <section class="mb-5">
+        <h2>There are many ways to get undefined in JavaScript</h2>
+        <p>`Types of undifined
+            In JavaScript, the undefined is a primitive type and has only one value “undefined”. A variable that is declared/created but not assigned with a value anywhere in the program has a default value of “undefined”</p>
+      </section>
+
+      <section class="mb-5">
+        <h2>How event loop works in JavaScript ?</h2>
+        <p>Non-blocking
+            There is no one definition of blocking; it just simply means things that are running slowly on the thread. So non-blocking means things that aren’t slow on the thread.
+            
+            But wait, did I say JavaScript runs on a single thread? And I also said it non-blocking, which means task run quickly on the call stack? But how??? How about when we run timers? Loops?
+            
+            Relax! We’d find out in a bit 😉.
+            
+            Concurrent
+            Concurrency means that the code is being executed concurrently by more than one thread.
+            
+            Okay, things are getting really weird now, how can JavaScript be single-threaded and be concurrent at the same time? i.e., executing its code with more than one thread?
+            
+            Asynchronous
+            Asynchronous programming means that the code runs in an event loop. When there is a blocking operation, the event is started. The blocking code keeps running without blocking the main execution thread. When the blocking code finishes running, it queue’s the result of the blocking operations and pushes them back to the stack.
+            
+            But JavaScript has a single thread? What then executes this blocking code while letting other codes in the thread get executed?
+            
+            Before we proceed, let’s have a recap of the above.
+            
+            JavaScript is single-threaded
+            JavaScript is non-blocking, i.e. slow processes don’t block its execution
+            JavaScript is concurrent, i.e. it executes its code in more than one thread at the same time
+            JavaScript is asynchronous, i.e., it runs blocking code somewhere else.</p>
+      </section>
+    </main>
+  </body>
+</html>
